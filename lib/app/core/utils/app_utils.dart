@@ -1,0 +1,41 @@
+import 'package:get/get.dart';
+
+class AppUtils {
+  static bool isEmail(String s) => GetUtils.isEmail(s);
+  static bool isPhoneNumber(String s) => GetUtils.isPhoneNumber(s);
+  static bool isDateTime(String s) => GetUtils.isDateTime(s);
+  static bool isMD5(String s) => GetUtils.isMD5(s);
+  static bool isSHA1(String s) => GetUtils.isSHA1(s);
+  static bool isSHA256(String s) => GetUtils.isSHA256(s);
+  static bool isBinary(String s) => GetUtils.isBinary(s);
+  static bool isIPv4(String s) => GetUtils.isIPv4(s);
+  static bool isIPv6(String s) => GetUtils.isIPv6(s);
+  static bool isHexadecimal(String s) => GetUtils.isHexadecimal(s);
+  static bool isPalindrom(String s) => GetUtils.isPalindrom(s);
+  static bool isPassport(String s) => GetUtils.isPassport(s);
+  static bool isCurrency(String s) => GetUtils.isCurrency(s);
+  static bool isCpf(String s) => GetUtils.isCpf(s);
+  static bool isCnpj(String s) => GetUtils.isCnpj(s);
+  static bool isCaseInsensitiveContains(String a, String b) => GetUtils.isCaseInsensitiveContains(a, b);
+  static bool isCaseInsensitiveContainsAny(String a, String b) => GetUtils.isCaseInsensitiveContainsAny(a, b);
+  static String? capitalize(String s) => GetUtils.capitalize(s);
+  static String? capitalizeFirst(String s) => GetUtils.capitalizeFirst(s);
+  static String removeAllWhitespace(String s) => GetUtils.removeAllWhitespace(s);
+  static String? camelCase(String s) => GetUtils.camelCase(s);
+  static String? paramCase(String s) => GetUtils.paramCase(s);
+  static String numericOnly(String s, {bool firstWordOnly = false}) => GetUtils.numericOnly(s, firstWordOnly: firstWordOnly);
+  static bool isNull(dynamic value) => GetUtils.isNull(value);
+  static bool isNullOrBlank(dynamic value) => GetUtils.isNullOrBlank(value) ?? true;
+  static bool isBlank(dynamic value) => GetUtils.isBlank(value) ?? true;
+  static bool isLengthAh(dynamic value, int length) => GetUtils.isLengthEqualTo(value, length);
+  static bool hasMatch(String? value, String pattern) => GetUtils.hasMatch(value, pattern);
+  static bool isImage(String path) => GetUtils.isImage(path);
+  static bool isAudio(String path) => GetUtils.isAudio(path);
+  static bool isVideo(String path) => GetUtils.isVideo(path);
+  static bool isTxt(String path) => GetUtils.isTxt(path);
+  static bool isExcel(String path) => GetUtils.isExcel(path);
+  static bool isPPT(String path) => GetUtils.isPPT(path);
+  static bool isAPK(String path) => GetUtils.isAPK(path);
+  static bool isPDF(String path) => GetUtils.isPDF(path);
+  static bool isHTML(String path) => GetUtils.isHTML(path);
+}
