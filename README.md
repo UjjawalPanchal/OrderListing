@@ -1,16 +1,13 @@
-# demo_test_project
+A Flutter assessment project that implements an **Order Listing UI** backed by a mock orders API. Built with GetX for state management, routing, and dependency injection.
 
-A new Flutter project.
+---
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **Order listing** with paginated infinite scroll (20 orders per page, 237 total)
+- **Real-time search** by customer name, city, or order ID (debounced 400 ms)
+- **Status filter chips** — All, Pending, Confirmed, Shipped, Delivered, Cancelled, Refunded
+- **Sort** by Date, Amount, or Customer Name (asc/desc) via a bottom sheet
+- **Pull-to-refresh** to reload the list from the top
+- **Loading, error, and empty states** with retry and clear-filters actions
+- Order cards showing ID, customer, city, amount, item count, date, and a colour-coded status badge
